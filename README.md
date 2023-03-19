@@ -12,6 +12,10 @@ Propagate the orbit and enter the central body thermal parameters for Solar FLux
 
 The tool currently provides options for Earth or Moon orbits.
 
+<p align="center">
+  <img src="https://github.com/mattost14/CubeSat-Thermal-Power-App/blob/main/Figures/OrbitTab.png" height="300">
+</p>
+
 #### Earth orbits
 Propagator options: two-body-keplerian and SGP4.
 #### Moon orbits
@@ -29,6 +33,10 @@ For the Moon IR model, the user can select the "Gradient" option. In this case, 
 CubeSat size options: 1U, 3U, 6U, 12U, 16U
 
 For each face, select the cover material. Each built-in material offers different thermal-optical properties. The user can also enter a custom material with different values for absorptivity, emissivity and specific heat. If face is body-fixed solar panel, the user must enter the cell efficiency and packing factor.
+
+<p align="center">
+  <img src="https://github.com/mattost14/CubeSat-Thermal-Power-App/blob/main/Figures/ModelTab.png" height="300">
+</p>
 
 #### Deployable
 The user can also define the deployable solar panels, either Fixed or Sun-Tracking. The deployable panels are only used to computed the generated power and they are not considered in the thermal analysis.
@@ -58,13 +66,19 @@ The tool offers total power generation and battery charge depletion throughout t
 
 When the satellite is charging the battery, the satellite faces with body-fixed solar panels have their absoportion coefficients reduced to account for the power conversion. 
 
+<p align="center">
+  <img src="https://github.com/mattost14/CubeSat-Thermal-Power-App/blob/main/Figures/PowerTab.png" height="300">
+</p>
+
 ## Step 4) Run Thermal Analysis
 
 The tool offers the total accumulated radiation input coming from Sthe un, central body IR, and Albedo reflection.
 
 Finally, the internal node temperature and the faces nodes temperatures are plotted.
 
-
+<p align="center">
+  <img src="https://github.com/mattost14/CubeSat-Thermal-Power-App/blob/main/Figures/ThermalTab.png" height="300">
+</p>
 
 
 
