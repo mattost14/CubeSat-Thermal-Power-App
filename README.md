@@ -21,7 +21,19 @@ Propagator options: two-body-keplerian and SGP4.
 #### Moon orbits
 Propagator options: Kepler and Numerical (high precision). 
 The Numerical propagator uses the spherical harmonics (LP-100K) as gravity model.
-#### Moon IR model
+
+### IR model
+
+#### Day/Night Temperatures
+The "Day/Night Temp" is a simple IR model where the user only needs to enter the temperatures of the illuminated (Tday) and unilluminated (Tnight) parts of the central body. The IR flux received by the satellite is considered constant depending on whether the satellite is over the day or night. 
+
+To account for the discontinuity over the terminator line, the tool implements a weighted average of the radiance seen at each side based on the proportion of each side to the field of view of the satellite (see Figure below).
+
+<p align="center">
+  <img src="https://github.com/mattost14/CubeSat-Thermal-Power-App/blob/main/Figures/DayNightIRFluxCalculation.png" height="300">
+</p>
+
+#### Gradient
 For the Moon IR model, the user can select the "Gradient" option. In this case, the surface temperature, see Figure below, is modeled by the analytical expression provided in the [Human Landing System Lunar Thermal Analysis Guidebook](https://ntrs.nasa.gov/api/citations/20210010030/downloads/HLS-UG-001%20Lunar%20Thermal%20Analysis%20Guidebook%20Baseline_STI.pdf), Section 4.3, Pag 17. The IR flux is later computed by integrating the Moon's sphere discretized with 1 degree step. 
 
 <p align="center">
