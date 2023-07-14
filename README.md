@@ -2,6 +2,8 @@
 
 This MATLAB App is intended to provide a quick and easy way to perform preliminary thermal and power analysis for CubeSat missions. This is particularly usefull during the first phases of the project life-cycle. 
 
+https://www.youtube.com/watch?v=L0wHe530bRc
+
 # Instalation
 To install, simply run the 'CubeSat Thermal Power Toolbox.mlappinstall' file. After instalation, the app will be available on the Apps tab inside MATLAB.
 
