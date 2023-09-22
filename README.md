@@ -30,7 +30,7 @@ For the Moon IR model, the user can select the "Gradient" option. In this case, 
 
 ## Step 2) Model your CubeSat
 
-CubeSat size options: 1U, 3U, 6U, 12U
+CubeSat size options: 1U, 3U, 6U, 8U, 12U
 
 For each face, select the cover material. Each built-in material offers different thermal-optical properties. The user can also enter a custom material with different values for absorptivity, emissivity and specific heat. If face is body-fixed solar panel, the user must enter the cell efficiency and packing factor.
 
